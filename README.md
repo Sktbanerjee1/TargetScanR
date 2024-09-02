@@ -51,7 +51,7 @@ BiocManager::install("org.Hs.eg.db")
 
 ## Final result:
 
-![](results/top_miRNA_09-02-2024.svg){width="728"}
+![](results/top_miRNA_09-02-2024.svg)
 
 ## Known limitations:
 
