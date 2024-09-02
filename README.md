@@ -25,7 +25,7 @@ A full miRNA prediction data targeting human genes can be found in the [TargetSc
 ## Getting started:
 
 -   A working installation of R and R-studio is required.
--   Download the project source code from GitHub in a zip format.
+-   Download the project source code from GitHub in a [zip format](https://github.com/Sktbanerjee1/TargetScanR/archive/refs/heads/main.zip).
 -   Unzip the folder and open this folder in R studio as a project.
 -   Install the necessary R packages (dependencies for the scripts) by running the following commands in the console.
 
