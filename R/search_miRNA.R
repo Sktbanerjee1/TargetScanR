@@ -7,7 +7,6 @@ rm(list = ls())
 library(log4r)
 library(ggplot2)
 library(ggpubr)
-library(RColorBrewer)
 
 
 # Set up basic logging
@@ -52,7 +51,7 @@ p1 <- ggplot(top_miRNAs, aes(
   x = miRNA, y=`Gene Symbol`, fill=as.character(`Site Type`)
 )) + geom_tile(color="white") +
   theme_minimal() +
-  scale_fill_brewer(name = "Site Type",palette = "Set3") +
+  scale_fill_brewer(name = "Site Type",palette = "Paired") +
    labs(
     title = "miRNA binding site types",
     fill = "Site Type"
@@ -75,7 +74,7 @@ p2 <- ggplot(top_miRNAs, aes(
     legend.position = "right",
     plot.title = element_text(hjust = 0.5),
     plot.subtitle = element_text(hjust = 0.5)
-  ) + scale_fill_gradient2(low="darkgreen", mid = "white", high = "cyan4")
+  ) + scale_fill_gradient2(low = "deepskyblue",mid = "lightskyblue", high = "coral3")
 
 # merge the plots into one plot and write to a file
 out_dir <- "results/"
