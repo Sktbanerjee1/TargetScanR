@@ -1,6 +1,6 @@
 # TargetScanR
 
-A set of R scripts for to identify miRNA against known gene targets using the [Targetscan](https://www.targetscan.org/) predictions.
+A set of R scripts to identify miRNA against known gene targets using the [Targetscan](https://www.targetscan.org/) predictions.
 
 ## Background:
 
@@ -16,11 +16,11 @@ Detailed method leading to the prediction of miRNA binding sites can be found in
 
 The perl pipeline associated with the improved re-implementation can be found in this [GitHub repository](https://github.com/vagarwal87/TargetScanTools/tree/master?tab=readme-ov-file).
 
-The predictions generated as part of the TargetScan project are available in the form of a searchable [web tool](https://www.targetscan.org/), however, using this tool identify miRNA(s) simultaneously targeting multiple genes remains difficult, as searches can't be performed in batch mode. In this repository we provide a set of R scripts that aid in this regard using the data releases provided with the web tool.
+The predictions generated as part of the TargetScan project are available in the form of a searchable [web tool](https://www.targetscan.org/), however, using this tool to simultaneously identify miRNA(s) targeting multiple genes remains difficult. This is mainly due to the lack of batch search option. In this repository provides a set of R scripts that aid in this regard.
 
 ## Data source:
 
-A full miRNA prediction data targeting human genes can be found in the [TargetScan website](https://www.targetscan.org/cgi-bin/targetscan/data_download.vert80.cgi). The scripts in this project downloads the [Predicted Targets context++ scores (default predictions)](https://www.targetscan.org/vert_80/vert_80_data_download/Predicted_Targets_Context_Scores.default_predictions.txt.zip) and performs downstream processing.
+A full miRNA prediction data targeting human genes can be found in the [TargetScan website](https://www.targetscan.org/cgi-bin/targetscan/data_download.vert80.cgi). The scripts in this project download the [Predicted Targets context++ scores (default predictions)](https://www.targetscan.org/vert_80/vert_80_data_download/Predicted_Targets_Context_Scores.default_predictions.txt.zip) and perform downstream processing.
 
 ## Getting started:
 
