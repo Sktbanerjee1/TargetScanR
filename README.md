@@ -47,7 +47,7 @@ BiocManager::install("org.Hs.eg.db")
 
 -   Edit the `GeneTargets.txt` file to include the target gene symbols.
 -   Open the file `R/search_miRNA.R` and run the entire script.
--   Locate your result in the `results` folder. The naming pattern of the output file includes the date it was generated `results/top_miRNA_09-02-2024.svg`.
+-   Locate your result in the `results` folder. The naming pattern of the output file includes the date it was generated (e.g: `results/top_miRNA_09-02-2024.svg`).
 
 ## Final result
 
