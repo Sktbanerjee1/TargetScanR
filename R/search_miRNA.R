@@ -74,7 +74,7 @@ p2 <- ggplot(top_miRNAs, aes(
     legend.position = "right",
     plot.title = element_text(hjust = 0.5),
     plot.subtitle = element_text(hjust = 0.5)
-  ) + scale_fill_gradient2(low = "deepskyblue",mid = "lightskyblue", high = "coral3")
+  ) + scale_fill_gradient(low = "deepskyblue",high = "royalblue3")
 
 # merge the plots into one plot and write to a file
 out_dir <- "results/"
