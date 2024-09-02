@@ -52,6 +52,7 @@ p1 <- ggplot(top_miRNAs, aes(
   x = miRNA, y=`Gene Symbol`, fill=as.character(`Site Type`)
 )) + geom_tile(color="white") +
   theme_minimal() +
+  scale_fill_brewer(name = "Site Type",palette = "Set3") +
    labs(
     title = "miRNA binding site types",
     fill = "Site Type"
@@ -59,7 +60,7 @@ p1 <- ggplot(top_miRNAs, aes(
   theme(
     legend.position = "left",
     plot.title = element_text(hjust = 0.5)
-  ) + scale_fill_brewer(name = "Paired2")
+  )
 
 # site efficacy
 p2 <- ggplot(top_miRNAs, aes(
